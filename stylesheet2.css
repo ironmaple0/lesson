@@ -23,20 +23,19 @@ body {
 #header {
         width: 100%;
 }
-#header h1 {
-        margin: 0;
-        padding: 0;
-}
 
-#NBA {
-        width: 100%;
-        height: auto;
+
+#header h1 {
+        margin: 10px;
+        padding: 0;
 }
 
 #footer {
         clear: both;
         width: 100%;
-        padding: 3px 0 3px 0;
+        padding: 0 0 0 0;
+        position: fixed;
+        bottom: 0;
         background: #39F ;
         color: #FFF;
         font-weight: bold;
@@ -84,18 +83,31 @@ body {
         width: 95%;
         padding: 10px 30px 10px 10px;
 }
+
+#main h1 {
+    margin: 0 0 5px 0;
+    padding: 3px 10px 3px 10px;
+    color:#333;
+    font-size: 20px;
+}
+
 #main h2 {
-        margin: 0 0 10px 0;
+        margin: 0 0 10px 20px;
         padding: 3px 10px 3px 10px;
-        color: #FFF;
-        font-size: 16px;
-        border-left: solid 10px #C00;
-        background: #F90 url(../images/main_h2.jpg) right top repeat-y;
+        color:#333;
+        font-size: 24px;
 }
-#main p {
-        padding: 0;
-        font-size: 16px;
+ 
+p {
+    margin: 13px 7px 13px 7px;
+    padding: 0 0 0 0;
+    font-size: 16px;
 }
+p.test {
+    padding: 5px 5px 5px 5px;
+    font-size: 16px;
+}
+
 #main .post {
         margin:0 0 30px 0;
 }
@@ -103,19 +115,21 @@ body {
         margin: 0 0 0 8px;
 }
 #main .post img.left {
-        margin: 0 8px 0 0;
+        margin: -50px 90px 0 60px;
 }
+
 
 .right {
         float: right;
-        width: 40%;
+        width: 60%;
         height: auto;
 }
 
 .left {
         float: left;
         width: 40%;
-        height: auto;
+        height: 350px;
+        object-fit: cover;
 }
 
 .clearfix {
@@ -127,46 +141,3 @@ body {
         clear: both;
 }
 
-#side {
-        width: 85%;
-        padding: 20px;
-        background-color: #F99;
-}
-#side .box {
-        margin: 0 auto 30px auto;
-        padding: 0 0 20px 0;
-        background: url(images/side_box.png) bottom no-repeat;
-}
-#side .box h2 {
-        margin: 0;
-        padding: 8px;
-        text-align: center;
-        color: #fff;
-        font-size: 16px;
-        line-height: 16px;
-        font-weight: normal;
-        background: url(images/side_box_h2.png) center no-repeat
-}
-#side .box .boxBody {
-        padding: 8px;
-        border-right: solid 1px #C36;
-        border-bottom: solid 1px #C36;
-        border-left: solid 1px #C36;
-        background: #fff;
-}
-#side .box .boxBody ul {
-        margin: 0 0 16px 0;
-        padding: 0;
-}
-#side .box .boxBody ul li {
-        padding: 8px 0 8px 4px;
-        list-style: none;
-        border-bottom: solid 1px #C36;
-}
-
-#side .box .boxBody ul li:hover {
-        padding: 8px 0 8px 4px;
-        list-style: none;
-        border-bottom: solid 1px #C36;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-}
