@@ -25,21 +25,21 @@
                         <div id="main">
                             <div class="flex-container">
                                 <h1>名前</h1>
-                         <div class="box">
-                           </div>
+                         <input type="text" name="name" size="50" maxlength="30">
                             </div>
                             <div class="flex-container">
                          <h2>性別</h2>
-                         <p>男性</p>
-                         <p>女性</p>
+                         <input type="radio" name="sex" value="男性">男性
+                         <input type="radio" name="sex" value="女性">女性
                         　　　</div>
                          <div class="flex-container">
                          <h3>問合せ内容</h3>
-                         <div class="box2">
-                         </div>
+                         <textarea name="naiyou" rows="10" cols="80">ここに記入してください</textarea>
                         </div>
                          <h4>添付ファイル</h4>
+                         <input type="file" name="tennpufile">
                       </div>
+                      <input type="submit" value="送信">
              </div>
              <div id="footer">
                  <p>&copy; 20xx ○○ All Rights Reserved.</p>
