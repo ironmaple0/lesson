@@ -5,6 +5,7 @@
         <title>お問い合わせ画面
        </title>
         <link rel="stylesheet" href="stylesheet3.css">
+        
     </head>
     <body>
         <div id="header">
@@ -17,32 +18,55 @@
                     <li><a href="#">ナビ２</a></li>
                     <li><a href="#">ナビ３</a></li>
                     <li><a href="zikosyoukai.html">自己紹介</a></li>
-                    <li><a href="otoiawase.html">お問い合せ</a></li>
+                    <li><a href="otoiawase.html">お問い合わせ</a></li>
                 </ul>
             </div>
             <div id="container">
                     <div class="post clearfix">
                         <div id="main">
-                            <div class="flex-container">
-                                <h1>名前</h1>
-                         <input type="text" name="name" size="50" maxlength="30">
-                            </div>
-                            <div class="flex-container">
-                         <h2>性別</h2>
-                         <input type="radio" name="sex" value="男性">男性
-                         <input type="radio" name="sex" value="女性">女性
-                        　　　</div>
-                         <div class="flex-container">
-                         <h3>問合せ内容</h3>
-                         <textarea name="naiyou" rows="10" cols="80">ここに記入してください</textarea>
-                        </div>
-                         <h4>添付ファイル</h4>
-                         <input type="file" name="tennpufile">
-                      </div>
-                      <input type="submit" value="送信">
-             </div>
-             <div id="footer">
-                 <p>&copy; 20xx ○○ All Rights Reserved.</p>
-         </div>
-    </body>
+                            <form action="otoiawase.html" method="get" name="otoiawase">
+                            <tr>
+                             <td align="right"><b class="koumoku">名前</b></td>                
+                         <td><input type="text" name="name" size="65" maxlength="65"></td>
+                                </tr>
+                                <tr><br>
+                            <td align="right"><b class="koumoku">性別</b></td>
+                         <td><input type="radio" name="sex" value="男性"><b class="sentaku">男性</b>
+                         <input type="radio" name="sex" value="女性"><b class="sentaku">女性</b></td>
+                         　　　 </tr>
+                           <tr><br>
+                               <td align="right"><b class="koumoku2">問合内容</b></td>
+                        <td><textarea name="naiyou" rows="10" cols="65"></textarea></td>
+                           </tr>
+                           <tr><br>
+                               <td align="right"><b class="koumoku3">添付ファイル</b></td>
+                         <td><input type="file" name="tennpufile"></td>
+                          </tr>
+                          <br>
+                         <div id="submit"><input id="submit_button" type="submit" value="送信" onClick="return check();"></div>
+                         </form>
+                        <script type="text/Javascript">
+        function check() {
+            if(otoiawase.name.value == "") {
+                alert("名前を入力してください");
+                return: false;
+           }else{
+               return true;
+           }
+
+           else if(otoiawase.naiyou.value == "") {
+               alert("内容を入力してください");
+               return: false;
+           }else{
+               return: true;
+           }
+        }
+        </script>
+                           <div id="footer">
+                          <p>&copy; 20xx ○○ All Rights Reserved.</p>
+                       </div>
+                   </div>　　
+               </div>　
+        </div>
+  </body>
 </html>
